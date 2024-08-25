@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Practice</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <script src="main.js" defer></script>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 id="header" class="bg-body-tertiary">This is a Page Header</h1>
+            <p class="border-2 bg-body-tertiary p-3 rounded-2 text-success-emphasis"  onclick="showAlert()" id="para">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus
+              quia nulla pariatur assumenda animi magni suscipit, nisi vero
+              omnis iure?
+              <div class="card p-3 bg-body-tertiary">
+              <label for="text" class="form-label"> Name </label>
+              <input type="text" name="text" id="text" class="form-control" value="name"/>
+              <label for="email" class="form-label"> Email </label>
+              <input type="email" name="email" class="form-control" id="email" />
+              <label for="dob" class="form-label"> DOB </label>
+              <input type="date" name="dob" class="form-control" id="dob" />
+              <label for="search-opt"> Search </label>
+              <input type="search" name="search-opt" id="search" class="form-control">
+              
+              
+              <button class="btn btn-outline-success my-2" value="Submit"> Submit </button>
+              </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
