@@ -1,17 +1,36 @@
 const header = document.querySelector("#header");
 const paragraph = document.querySelector("#para");
+const keyWord = document.querySelector('#key')
+
+keyWord.addEventListener("keydown", (e) => {
+
+        console.log('key down ')
+
+})
+keyWord.addEventListener("keypress", (e) => {
+
+    console.log('key press')
+
+})
+keyWord.addEventListener("keyup", (e) => {
+
+    console.log('key up')
+
+})
 
 //
 // const inputs = document.querySelectorAll("input");
 
 
 const inputForms = document.querySelector("#form-group");
-inputForms.addEventListener("change", (e) => {
+inputForms.addEventListener("change", (e,value) => {
     values = e.target.value;
     if (values === ''){
         console.log("Values cannot be empty");
     }
-    alert(values);
+
+
+
 })
 
 
@@ -22,17 +41,25 @@ inputForms.addEventListener("change", (e) => {
 
 
 
-const submitButton = document.querySelector('#subButton')
+const submitButton = document.querySelector('#subButton');
 submitButton.addEventListener('click', onSubmitHandler)
+submitButton.addEventListener('mouseover', ()=>{
+    submitButton.classList.add('active');
+    submitButton.style.cursor = 'pointer';
+    submitButton.classList.remove('active');
+} )
 
 function onSubmitHandler(e){
     e.preventDefault()
-    values = .value;
+    console.log("InputForms",inputForms.value)
+    console.log("Values",values)
+    console.log("submitted", )
     if (values === ""){
-        alert("Please enter a info");
-        console.log("please enter a valid info");
+        console.log("Values cannot be empty")
+    }else {
+        const inputValue = values;
+        console.log('inputValue :', inputValue)
     }
-
 
 }
 
@@ -46,7 +73,7 @@ header.style.borderRadius = "12px";
 
 header.textContent = "Hello from JavaScript";
 
-console.log("Hello World");
+
 //
 // function showAlert() {
 //   alert("This is a function call");
