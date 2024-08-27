@@ -2,19 +2,38 @@ const header = document.querySelector("#header");
 const paragraph = document.querySelector("#para");
 const keyWord = document.querySelector('#key')
 
-keyWord.addEventListener("keydown", (e) => {
+paragraph.addEventListener("mouseover", e => {
+    element = e.target
+    element.style.color = '#1d68f8'
+    element.style.cursor = 'pointer'
+    element.style.backgroundColor = 'rgba(220,220,220,0.38)'
+})
+paragraph.addEventListener("mouseout", e => {
+    element = e.target
+    element.style.color = '#8c8b8b'
+    element.style.backgroundColor = '#dddddd'
+})
 
-        console.log('key down ')
+window.addEventListener("load", e => {
+    console.log('Page loaded')
+})
+
+
+
+
+
+keyWord.addEventListener("keydown", (e) => {
+        console.log('key down ', e.key);
 
 })
 keyWord.addEventListener("keypress", (e) => {
 
-    console.log('key press')
+    console.log('key press', e.key);
 
 })
 keyWord.addEventListener("keyup", (e) => {
 
-    console.log('key up')
+    console.log('key up', e.key);
 
 })
 
