@@ -1,6 +1,7 @@
 const header = document.querySelector("#header");
 const paragraph = document.querySelector("#para");
 const keyWord = document.querySelector('#key')
+const key = document.querySelector('#keyPress')
 
 paragraph.addEventListener("mouseover", e => {
     element = e.target
@@ -27,6 +28,8 @@ keyWord.addEventListener("keydown", (e) => {
 
 })
 keyWord.addEventListener("keypress", (e) => {
+
+    key.textContent = e.key
 
     console.log('key press', e.key);
 
