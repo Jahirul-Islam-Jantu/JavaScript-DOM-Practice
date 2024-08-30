@@ -1,6 +1,7 @@
 const secondHand = document.querySelector('.second-hand');
 const minuteHand = document.querySelector('.min-hand');
 const hourHand = document.querySelector('.hour-hand');
+const time = document.querySelector('#time')
 
 function setDate(){
     const now = new Date();
@@ -15,3 +16,11 @@ function setDate(){
     hourHand.style.transform = `rotate(${hoursDegree}deg)`;
 }
 setInterval(setDate, 1000);
+
+
+const digitalTime = new Date().toLocaleTimeString();
+let seconds =new Date().getSeconds().toLocaleString(); ;
+seconds.toString().padStart(2, '0');
+console.log(seconds)
+time.textContent = digitalTime;
+setInterval(digitalTime, 1000)
