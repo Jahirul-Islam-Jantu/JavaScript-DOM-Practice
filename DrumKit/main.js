@@ -1,4 +1,3 @@
-window.addEventListener('keydown', playSounds)
 
 function playSounds(e) {
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`)
@@ -18,3 +17,4 @@ const key = document.querySelectorAll('.key')
 key.forEach((key) => {
     key.addEventListener('transitionend', removeTransition)
 })
+window.addEventListener('keydown', playSounds)
