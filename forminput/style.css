@@ -41,6 +41,7 @@ button:hover {
 }
 #inputResult {
   border: 1px solid transparent;
+  /* display: block; */
   box-shadow: 0 0 2px blueviolet;
   padding: 2rem;
   border-radius: 20px;

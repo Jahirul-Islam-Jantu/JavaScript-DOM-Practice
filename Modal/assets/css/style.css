@@ -1,9 +1,27 @@
-#myModal{
-    display: none;
+#myModal {
+  display: none;
 }
 
-.modal{
-    position:fixed;
-
-
+.modal {
+  position: fixed;
+  animation: left 0.5s linear infinite;
+  -webkit-animation: left 2s linear infinite;
+}
+@keyframes left {
+  from {
+    color: aquamarine;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+  }
+  to {
+    color: #333000;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+  }
 }
