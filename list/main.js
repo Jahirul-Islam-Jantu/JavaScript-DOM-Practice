@@ -11,10 +11,6 @@ function add() {
     let myList = document.querySelector("#listItem");
     myList.appendChild(item);
   } else {
-    let warning = document.querySelector("#warning");
-    warning.innerText = "items requires";
-    if (item === item) {
-      warning.innerText = "";
-    }
+    alert("item require");
   }
 }
