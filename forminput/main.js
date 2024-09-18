@@ -11,4 +11,5 @@ const clickHandler = () => {
   };
 
   result.innerHTML = JSON.stringify(jsonObj);
+  alert(JSON.stringify(jsonObj));
 };
